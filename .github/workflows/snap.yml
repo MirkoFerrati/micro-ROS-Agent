@@ -25,7 +25,7 @@ jobs:
       with:
         # full history for latest tag name
         fetch-depth: 0
-    - uses: docker/setup-qemu-action@v1
+    - uses: docker/setup-qemu-action@v2
     - uses: snapcore/action-build@v1
     - uses: diddlesnaps/snapcraft-multiarch-action@v1
       id: build-snap
